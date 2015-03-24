@@ -4,10 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.mova.fragements.HomeFragment;
+import com.mova.fragements.LocateUsFragment;
 import com.mova.fragements.MenuFragment;
 import com.mova.fragements.ReservationFragment;
-import com.mova.fragements.HomeFragment;
-import com.mova.snhu.LocateUsFragment;
 
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 

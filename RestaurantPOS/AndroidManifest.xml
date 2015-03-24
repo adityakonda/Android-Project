@@ -14,8 +14,10 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.mova.fragements.MainActivity"
-            android:label="@string/app_name" >
+            android:name="com.mova.activities.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +25,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mova.snhu.LocateUsFragment"
+            android:name="com.mova.activities.LocateUsFragment"
             android:label="@string/title_activity_locate_us_fragment" >
+        </activity>
+        <activity
+            android:name="com.mova.activities.MainActivity"
+            android:label="Restaurant POS"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
