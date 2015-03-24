@@ -8,15 +8,24 @@ import android.view.ViewGroup;
 
 import com.mova.snhu.R;
 
-public class TopRatedFragment extends Fragment {
+public class ReservationFragment extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_top_rated,
-				container, false);
-
+		View rootView = inflater.inflate(R.layout.fragment_reservation, container, false);
+		
 		return rootView;
 	}
+
 }
+
+
+
+
+
+
+
+
+

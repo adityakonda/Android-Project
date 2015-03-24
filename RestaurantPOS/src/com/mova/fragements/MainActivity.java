@@ -1,8 +1,5 @@
 package com.mova.fragements;
 
-
-
-
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
@@ -14,14 +11,15 @@ import android.support.v4.view.ViewPager;
 import com.mova.adapters.TabsPagerAdapter;
 import com.mova.snhu.R;
 
-@SuppressLint("NewApi") public class MainActivity extends FragmentActivity implements
+@SuppressLint("NewApi")
+public class MainActivity extends FragmentActivity implements
 		ActionBar.TabListener {
 
 	private ViewPager viewPager;
 	private TabsPagerAdapter mAdapter;
 	private ActionBar actionBar;
 	// Tab titles
-	private String[] tabs = { "Top Rated", "Games", "Movies" };
+	private String[] tabs = { "Home", "Menu", "Reservation", "Locate Us" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +33,7 @@ import com.mova.snhu.R;
 
 		viewPager.setAdapter(mAdapter);
 		actionBar.setHomeButtonEnabled(false);
-		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);		
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
 		// Adding Tabs
 		for (String tab_name : tabs) {
